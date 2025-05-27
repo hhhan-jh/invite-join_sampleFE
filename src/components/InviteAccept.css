@@ -1,0 +1,221 @@
+.invite-accept-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2196F3 0%, #21CBF3 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .accept-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    animation: slideUp 0.5s ease-out;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .invite-header h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 2em;
+  }
+  
+  .invite-header p {
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+  }
+  
+  .club-preview {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 2px solid #e9ecef;
+  }
+  
+  .club-icon {
+    font-size: 4em;
+    margin-bottom: 15px;
+  }
+  
+  .club-preview h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+  }
+  
+  .club-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  .club-stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stat-number {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #2196F3;
+  }
+  
+  .stat-label {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  .action-section {
+    margin-bottom: 20px;
+  }
+  
+  .join-btn {
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .join-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(76, 175, 80, 0.3);
+  }
+  
+  .join-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid transparent;
+    border-top: 2px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .cancel-btn {
+    background: transparent;
+    color: #666;
+    border: 2px solid #ddd;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+  }
+  
+  .cancel-btn:hover:not(:disabled) {
+    background: #f8f9fa;
+    border-color: #adb5bd;
+  }
+  
+  .error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 4px solid #dc3545;
+  }
+  
+  .invite-info {
+    background: rgba(33, 150, 243, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #2196F3;
+  }
+  
+  .invite-info p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9em;
+  }
+  
+  .error-content h2 {
+    color: #dc3545;
+    margin-bottom: 15px;
+  }
+  
+  .error-content p {
+    color: #666;
+    margin-bottom: 25px;
+  }
+  
+  .home-btn {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .home-btn:hover {
+    background: #5a6268;
+  }
+  
+  @media (max-width: 600px) {
+    .accept-card {
+      padding: 25px;
+      margin: 10px;
+    }
+    
+    .club-stats {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .stat {
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
