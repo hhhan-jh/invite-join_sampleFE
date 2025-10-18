@@ -8,7 +8,7 @@ const InviteAccept = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
-  const [clubInfo, setClubInfo] = useState(null);
+  // const [clubInfo, setClubInfo] = useState(null);
   
   const code = searchParams.get('code'); // URL에서 ?code=xxx 추출
 
