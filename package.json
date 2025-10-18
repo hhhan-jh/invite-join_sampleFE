@@ -1,6 +1,7 @@
 {
-  "name": "rhythmeet-frontend",
+  "name": "invite-join_sampleFE",
   "version": "0.1.0",
+  "homepage": "https://hhhan-jh.github.io/invite-join_sampleFE",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
