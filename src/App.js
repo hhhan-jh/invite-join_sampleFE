@@ -23,7 +23,7 @@ function App() {
           <Route path="/" element={
             <div style={{ padding: '20px', textAlign: 'center' }}>
               <h1>Rhythmeet</h1>
-              <p><a href="/club/1/invite">동아리 초대 링크 생성 테스트</a></p>
+              <p><Link="/club/1/invite">동아리 초대 링크 생성 테스트</a></p>
             </div>
           } />
         </Routes>
